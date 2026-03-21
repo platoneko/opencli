@@ -13,7 +13,7 @@ cli({
   navigateBefore: false,
   browser: true,
   args: [
-    { name: 'uid', required: true, help: 'Encrypted UID of the candidate' },
+    { name: 'uid', positional: true, required: true, help: 'Encrypted UID of the candidate' },
     { name: 'type', default: 'phone', choices: ['phone', 'wechat'], help: 'Exchange type: phone or wechat' },
   ],
   columns: ['status', 'detail'],

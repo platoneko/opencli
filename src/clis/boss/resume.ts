@@ -21,7 +21,7 @@ cli({
   navigateBefore: false,
   browser: true,
   args: [
-    { name: 'uid', required: true, help: 'Encrypted UID of the candidate (from chatlist)' },
+    { name: 'uid', positional: true, required: true, help: 'Encrypted UID of the candidate (from chatlist)' },
   ],
   columns: [
     'name', 'gender', 'age', 'experience', 'degree', 'active_time',
